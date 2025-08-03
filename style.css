@@ -1,63 +1,53 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
-body {
-  font-family: 'Vazirmatn', sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem;
-  line-height: 1.75;
-  direction: rtl;
-}
+ body {
+     font-family: 'Vazirmatn', sans-serif;
+ }
 
-h1, h2, h3 {
-  color: #2c3e50;
-}
+ .list-group-item {
+     cursor: pointer;
+     transition: background-color 0.2s ease;
+ }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-}
+ .list-group-item:hover {
+     background-color: #f1f1f1;
+ }
 
-a:hover {
-  text-decoration: underline;
-}
+ .list-group-item.active {
+     background-color: #0d6efd;
+     border-color: #0d6efd;
+     color: #fff;
+ }
 
-#post-list {
-  background-color: #fff;
-  padding: 1rem;
-  border: 1px solid #dee2e6;
-  border-radius: 0.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+ #post-content h1,
+ #post-content h2,
+ #post-content h3 {
+     margin-top: 1.5rem;
+     font-weight: bold;
+ }
 
-#post-list a {
-  display: block;
-  margin-bottom: 0.75rem;
-  font-weight: bold;
-}
+ #post-content p {
+     margin-bottom: 1rem;
+ }
 
-#post-content {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  border: 1px solid #dee2e6;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
+ #post-content pre {
+     background-color: #f8f9fa;
+     padding: 1rem;
+     border-radius: 0.5rem;
+     overflow-x: auto;
+ }
 
-pre {
-  background-color: #f1f3f5;
-  padding: 1rem;
-  overflow-x: auto;
-  border-radius: 0.5rem;
-}
+ #post-content code {
+     background-color: #e9ecef;
+     padding: 0.25rem 0.5rem;
+     border-radius: 0.25rem;
+     font-family: monospace;
+ }
 
-code {
-  background-color: #e9ecef;
-  padding: 0.2rem 0.4rem;
-  border-radius: 0.25rem;
-  font-family: monospace;
-}
+ .card {
+     border-radius: 0.5rem;
+ }
+
+ .card-header {
+     font-size: 1.1rem;
+ }
