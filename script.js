@@ -9,7 +9,7 @@ async function loadPostsTree() {
 function renderNode(node, level = 0) {
     const wrapper = document.createElement('div');
     wrapper.className = 'tree-node';
-    wrapper.style.marginRight = ${ level * 1 } rem;
+    wrapper.style.marginRight = level + 'rem';
 
     if (node.children) {
         const toggler = document.createElement('div');
