@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    direction: rtl;
+}
+
+#post-list a {
+    display: block;
+    margin-bottom: 10px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+#post-list a:hover {
+    text-decoration: underline;
+}
+
+#post-content {
+    margin-top: 40px;
+    line-height: 1.6;
+}
