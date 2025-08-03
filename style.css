@@ -1,53 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
 
- body {
-     font-family: 'Vazirmatn', sans-serif;
- }
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #f8f9fa;
+    direction: rtl;
+}
 
- .list-group-item {
-     cursor: pointer;
-     transition: background-color 0.2s ease;
- }
+.navbar-brand img {
+    border-radius: 4px;
+}
 
- .list-group-item:hover {
-     background-color: #f1f1f1;
- }
+.list-group-item {
+    cursor: pointer;
+    border: none;
+    padding: 0.75rem 1rem;
+    transition: background-color 0.2s ease;
+    border-right: 4px solid transparent;
+}
 
- .list-group-item.active {
-     background-color: #0d6efd;
-     border-color: #0d6efd;
-     color: #fff;
- }
+.list-group-item:hover {
+    background-color: #f0f0f0;
+}
 
- #post-content h1,
- #post-content h2,
- #post-content h3 {
-     margin-top: 1.5rem;
-     font-weight: bold;
- }
+.list-group-item.active {
+    background-color: #e9ecef;
+    font-weight: bold;
+    border-right: 4px solid #0d6efd;
+    color: #0d6efd;
+}
 
- #post-content p {
-     margin-bottom: 1rem;
- }
+#post-content h1,
+#post-content h2,
+#post-content h3 {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #212529;
+}
 
- #post-content pre {
-     background-color: #f8f9fa;
-     padding: 1rem;
-     border-radius: 0.5rem;
-     overflow-x: auto;
- }
+#post-content pre {
+    background-color: #f1f3f5;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
 
- #post-content code {
-     background-color: #e9ecef;
-     padding: 0.25rem 0.5rem;
-     border-radius: 0.25rem;
-     font-family: monospace;
- }
+#post-content code {
+    background-color: #e9ecef;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-family: monospace;
+}
 
- .card {
-     border-radius: 0.5rem;
- }
-
- .card-header {
-     font-size: 1.1rem;
- }
+.card {
+    border-radius: 0.5rem;
+}
