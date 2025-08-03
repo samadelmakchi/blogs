@@ -1,10 +1,41 @@
 [
     {
-        "file": "post1.md",
-        "title": "پست اول"
+        "title": "📁 راهنما",
+        "children": [
+            {
+                "title": "📄 شروع کار",
+                "file": "posts/guide/getting-started.md"
+            },
+            {
+                "title": "📄 نصب",
+                "file": "posts/guide/installation.md"
+            },
+            {
+                "title": "📁 پیشرفته",
+                "children": [
+                    {
+                        "title": "📄 تنظیمات",
+                        "file": "posts/guide/advanced/settings.md"
+                    },
+                    {
+                        "title": "📄 اتوماسیون",
+                        "file": "posts/guide/advanced/automation.md"
+                    }
+                ]
+            }
+        ]
     },
     {
-        "file": "post2.md",
-        "title": "پست دوم"
+        "title": "📁 مرجع API",
+        "children": [
+            {
+                "title": "📄 کاربر",
+                "file": "posts/api/user.md"
+            },
+            {
+                "title": "📄 پرداخت",
+                "file": "posts/api/payment.md"
+            }
+        ]
     }
 ]

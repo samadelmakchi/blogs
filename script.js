@@ -1,43 +1,48 @@
-const postList = document.getElementById('post-list');
-const postContent = document.getElementById('post-content');
-let posts = [];
+async function loadPostsTree() {
+    const res = await fetch('posts.json');
+    const tree = await res.json();
+    const container = document.getElementById('post-list');
+    container.innerHTML = '';
+    tree.forEach(item => container.appendChild(renderNode(item)));
+}
 
-async function loadPostsList() {
-    try {
-        const res = await fetch('posts.json');
-        posts = await res.json();
+function renderNode(node, level = 0) {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'tree-node';
+    wrapper.style.marginRight = ${ level * 1 } rem;
 
-        postList.innerHTML = '';
-        posts.forEach(post => {
-            const link = document.createElement('a');
-            link.href = `#${post.file}`;
-            link.textContent = post.title;
-            postList.appendChild(link);
+    if (node.children) {
+        const toggler = document.createElement('div');
+        toggler.className = 'tree-folder list-group-item';
+        toggler.textContent = node.title;
+        toggler.addEventListener('click', () => {
+            childrenWrapper.classList.toggle('d-none');
         });
+        wrapper.appendChild(toggler);
 
-        loadPost(); // بارگذاری پست در صورت وجود در URL
-    } catch (err) {
-        postList.innerHTML = '<p>مشکلی در بارگذاری لیست پست‌ها پیش آمده.</p>';
-    }
-}
 
-function loadPost() {
-    const postFile = location.hash.slice(1);
-    const post = posts.find(p => p.file === postFile);
-    if (post) {
-        fetch(`posts/${post.file}`)
-            .then(res => res.text())
-            .then(md => {
-                postContent.innerHTML = marked.parse(md);
-                window.scrollTo(0, 0);
-            })
-            .catch(() => {
-                postContent.innerHTML = '<p>خطا در بارگذاری پست.</p>';
-            });
+        const childrenWrapper = document.createElement('div');
+        childrenWrapper.className = 'tree-children d-none';
+        node.children.forEach(child => {
+            childrenWrapper.appendChild(renderNode(child, level + 1));
+        });
+        wrapper.appendChild(childrenWrapper);
     } else {
-        postContent.innerHTML = "<p>لطفاً یک پست را انتخاب کنید.</p>";
+        const item = document.createElement('div');
+        item.className = 'list-group-item tree-leaf';
+        item.textContent = node.title;
+        item.addEventListener('click', async () => {
+            document.querySelectorAll('.tree-leaf').forEach(el => el.classList.remove('active'));
+            item.classList.add('active');
+            const res = await fetch(node.file);
+            const text = await res.text();
+            document.getElementById('post-content').innerHTML = marked.parse(text);
+        });
+        wrapper.appendChild(item);
+
     }
+
+    return wrapper;
 }
 
-window.addEventListener('hashchange', loadPost);
-window.addEventListener('load', loadPostsList);
+window.addEventListener('DOMContentLoaded', loadPostsTree);
