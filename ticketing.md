@@ -74,4 +74,7 @@ graph TD
   actor1 --> UC5
   actor1 --> UC6
 
+  %% جایگاه پایین برای مدیر سیستم
+  actor1 --> Z[موقعیت پایین‌تر]
+  style Z fill:transparent, stroke:transparent
 ```
