@@ -22,8 +22,7 @@ self.addEventListener("install", event => {
             cache.add(new Request("script.js"));
             //---------- logo
             cache.add(new Request("logo/preview.jpg"));
-            cache.add(new Request("logo/logo.png"));
-            cache.add(new Request("logo/android-144x144.png"));
+            cache.add(new Request("logo/logo.jpg"));
             cache.add(new Request("logo/favicon.ico"));
             cache.add(new Request("logo/favicon.png"));
             cache.add(new Request("logo/favicon-16x16.png"));
@@ -72,8 +71,8 @@ self.addEventListener("install", event => {
             cache.add(new Request("logo/mstile-150x150.png"));
             cache.add(new Request("logo/mstile-310x150.png"));
             cache.add(new Request("logo/mstile-310x310.png"));
-            cache.add(new Request("logo/maskable-icon-192x192"));
-            cache.add(new Request("logo/maskable-icon-512x512"));
+            cache.add(new Request("logo/maskable-icon-192x192.png"));
+            cache.add(new Request("logo/maskable-icon-512x512.png"));
             cache.add(new Request("logo/browserconfig.xml"));
             cache.add(new Request("logo/android-chrome-16x16.png"));
             cache.add(new Request("logo/android-chrome-32x32.png"));
