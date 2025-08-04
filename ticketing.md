@@ -50,11 +50,16 @@
 ---
 
 ```mermaid
+%% شبیه‌سازی Use Case Diagram با استایل گراف
+graph TD
+  actor1((کاربر))
+  actor2((مدیر سیستم))
 
-sequenceDiagram
-    actor Alice
-    actor Bob
-    Alice->>Bob: Hi Bob
-    Bob->>Alice: Hi Alice
+  actor1 --> UC1[ثبت‌نام]
+  actor1 --> UC2[ورود به سیستم]
+  actor1 --> UC3[مشاهده پروفایل]
 
+  actor2 --> UC2
+  actor2 --> UC4[مدیریت کاربران]
+  actor2 --> UC5[گزارش‌گیری]
 ```
