@@ -1,6 +1,6 @@
 [
     {
-        "title": "📁 راهنما",
+        "title": "📁 DevOps",
         "children": [
             {
                 "title": "📄 شروع کار",
@@ -19,7 +19,20 @@
                 "file": "posts/guide/installation.md"
             },
             {
-                "title": "📁 پیشرفته",
+                "title": "📁 Ansible",
+                "children": [
+                    {
+                        "title": "📄 تنظیمات",
+                        "file": "posts/guide/advanced/settings.md"
+                    },
+                    {
+                        "title": "📄 اتوماسیون",
+                        "file": "posts/guide/advanced/automation.md"
+                    }
+                ]
+            },
+            {
+                "title": "📁 Docker",
                 "children": [
                     {
                         "title": "📄 تنظیمات",

@@ -1,4 +1,4 @@
-const CACHE_NAME = "smd_blog_001";
+const CACHE_NAME = "smd_blog_002";
 const OFFLINE_URL = "index.html";
 
 //------------------------------------------------------------------------------------
@@ -16,7 +16,6 @@ self.addEventListener("install", event => {
 			cache.add(new Request("index.html"));
             cache.add(new Request("manifest.json"));
             cache.add(new Request("sw.js"));
-            cache.add(new Request("sitemap.xml"));
             cache.add(new Request("robots.txt"));
             cache.add(new Request("favicon_config.json"));
             cache.add(new Request("style.css"));
