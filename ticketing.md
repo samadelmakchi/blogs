@@ -50,14 +50,17 @@
 ---
 
 ```mermaid
+sequenceDiagram
+    actor User
+    actor Admin
 
-zenuml
-    title صدای مشتری (تیکت)
-    @Actor actor1
-    @Actor actor2
-    @Database Bob
-    Alice->Bob: Hi Bob
-    Bob->Alice: Hi Alice
+    User ->> System: Sign Up
+    User ->> System: Login
+    User ->> System: View Profile
+
+    Admin ->> System: Login
+    Admin ->> System: Manage Users
+    Admin ->> System: Generate Reports
 ```
 ---
 
