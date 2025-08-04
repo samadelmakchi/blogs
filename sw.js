@@ -16,7 +16,6 @@ self.addEventListener("install", event => {
 			cache.add(new Request("index.html"));
             cache.add(new Request("manifest.json"));
             cache.add(new Request("sw.js"));
-            cache.add(new Request("robots.txt"));
             cache.add(new Request("favicon_config.json"));
             cache.add(new Request("style.css"));
             cache.add(new Request("posts.json"));
