@@ -51,6 +51,17 @@
 
 ```mermaid
 
+zenuml
+    title صدای مشتری (تیکت)
+    @Actor actor1
+    @Actor actor2
+    @Database Bob
+    Alice->Bob: Hi Bob
+    Bob->Alice: Hi Alice
+```
+---
+
+```mermaid
 graph TD
 
   %% actors
@@ -74,7 +85,4 @@ graph TD
   actor1 --> UC5
   actor1 --> UC6
 
-  %% جایگاه پایین برای مدیر سیستم
-  actor1 --> Z[موقعیت پایین‌تر]
-  style Z fill:transparent, stroke:transparent
 ```
