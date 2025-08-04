@@ -144,3 +144,10 @@ body {
     background-color: #dee2e6;
     border-radius: 4px;
 }
+
+/* SMD */
+.smd_box{
+    margin-left: 10px;
+    margin-right: -10px;
+    margin-bottom: 10px;
+}

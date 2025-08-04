@@ -1,4 +1,4 @@
-const CACHE_NAME = "smd_pwa_002";
+const CACHE_NAME = "smd_blog_001";
 const OFFLINE_URL = "index.html";
 
 //------------------------------------------------------------------------------------
