@@ -7,6 +7,14 @@
                 "file": "posts/post1.md"
             },
             {
+                "title": "📄 پست 2",
+                "file": "posts/post2.md"
+            },
+            {
+                "title": "📄 پست 3",
+                "file": "posts/post3.md"
+            },
+            {
                 "title": "📄 نصب",
                 "file": "posts/guide/installation.md"
             },

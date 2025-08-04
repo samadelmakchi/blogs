@@ -60,7 +60,7 @@ body {
     border-radius: 0.3rem;
     cursor: pointer;
     padding: 0.5rem 1rem;
-    border-right: 4px solid transparent;
+    /* border-right: 4px solid transparent; */
     transition: background-color 0.2s ease;
     margin-bottom: 0.25rem;
 }
@@ -80,7 +80,7 @@ body {
     font-weight: 400;
     cursor: pointer;
     padding: 0.4rem 1rem;
-    border-right: 4px solid transparent;
+    /* border-right: 4px solid transparent; */
     transition: background-color 0.2s ease;
     margin-bottom: 0.25rem;
     color: #333;
