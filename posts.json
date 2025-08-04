@@ -43,6 +43,19 @@
                         "file": "posts/guide/advanced/automation.md"
                     }
                 ]
+            },
+            {
+                "title": "📁 Prometheus",
+                "children": [
+                    {
+                        "title": "📄 تنظیمات",
+                        "file": "posts/guide/advanced/settings.md"
+                    },
+                    {
+                        "title": "📄 اتوماسیون",
+                        "file": "posts/guide/advanced/automation.md"
+                    }
+                ]
             }
         ]
     },
